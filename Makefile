@@ -1,6 +1,6 @@
 .PHONY: changelog release
 
-SEMTAG=tools/semtag
+SEMTAG=semtag
 
 CHANGELOG_FILE=CHANGELOG.md
 TAG_QUERY=v11.0.0..
