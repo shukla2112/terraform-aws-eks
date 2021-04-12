@@ -1,5 +1,6 @@
 module "node_groups" {
   source                            = "github.com/shukla2112/terraform-aws-eks//modules/node_groups"
+  version                = "14.2.0"
   create_eks             = var.create_eks
   cluster_name           = coalescelist(aws_eks_cluster.this[*].name, [""])[0]
   default_iam_role_arn   = coalescelist(aws_iam_role.workers[*].arn, [""])[0]
