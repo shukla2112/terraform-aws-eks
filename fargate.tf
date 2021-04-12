@@ -1,5 +1,5 @@
 module "fargate" {
-  source                            = "github.com/shukla2112/terraform-aws-eks//modules/fargate"
+  source                            = "shukla2112/terraform-aws-eks//modules/fargate"
   version                           = "14.2.0"
   cluster_name                      = coalescelist(aws_eks_cluster.this[*].name, [""])[0]
   create_eks                        = var.create_eks
