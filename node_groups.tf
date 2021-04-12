@@ -1,5 +1,5 @@
 module "node_groups" {
-  source                 = "shukla2112/terraform-aws-eks//modules/node_groups"
+  source                 = "shukla2112/eks/aws//modules/node_groups"
   version                = "14.2.0"
   create_eks             = var.create_eks
   cluster_name           = coalescelist(aws_eks_cluster.this[*].name, [""])[0]
